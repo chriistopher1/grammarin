@@ -10,13 +10,13 @@ export default async function ProtectedLayout({
 }) {
   const supabase = await createClient();
 
-    // const {
-    //   data: { user },
-    // } = await supabase.auth.getUser();
-    // // ❌ Not logged in → redirect
-    // if (!user) {
-    //   redirect("/login");
-    // }
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  // ❌ Not logged in → redirect
+  if (!user) {
+    redirect("/login");
+  }
 
   // ✅ Logged in → render page
   return (

@@ -41,9 +41,9 @@ export default function LandingPage() {
       {/* Nav */}
       <nav className="border-b border-border/50 bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-chinese font-bold text-sm">文</span>
+              <span className="text-primary font-chinese font-bold text-sm">文</span>
             </div>
             <span className="font-bold text-lg text-foreground">Grammarin</span>
           </div>
@@ -164,7 +164,7 @@ export default function LandingPage() {
               { step: "3", title: "Take the Quiz", desc: "Drag and drop Mandarin words to form correct sentences." },
             ].map(({ step, title, desc }) => (
               <div key={step} className="flex flex-col items-center">
-                <div className="w-14 h-14 rounded-full gradient-primary flex items-center justify-center text-primary-foreground font-bold text-xl mb-4">
+                <div className="w-14 h-14 rounded-full gradient-primary flex items-center justify-center text-primary font-bold text-xl mb-4">
                   {step}
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">{title}</h3>
