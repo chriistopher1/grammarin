@@ -17,7 +17,7 @@ export async function markLearnCompleted(grammarId: string) {
     }, { onConflict: "user_id,grammar_id" })
 
   if (error) return { error: error.message }
-  revalidatePath(`/learn/${grammarId}`)
+  revalidatePath(`/grammar/${grammarId}`)
   return { success: true }
 }
 

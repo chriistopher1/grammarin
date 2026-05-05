@@ -29,7 +29,10 @@ function transformExplanation(data: any): ExplanationBlock[] {
       type: "examples",
       title: "Examples",
       content: "",
-      items: data.examples?.map((ex: any) => ex.sentence ?? JSON.stringify(ex)),
+      items: data.examples?.map(
+        (ex: any) =>
+          `${ex.chinese} (${ex.pinyin}) — ${ex.english}\n${ex.breakdown}`,
+      ),
     },
     {
       type: "usage",

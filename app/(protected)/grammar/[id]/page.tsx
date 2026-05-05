@@ -9,7 +9,7 @@ export default async function GrammarLearnPage({
 }) {
   const { id } = await params;
 
-  console.log("Fetching grammar with ID:", id);
+  // console.log("Fetching grammar with ID:", id);
 
   const grammar = await fetchGrammarById(id);
   if (!grammar) notFound();
