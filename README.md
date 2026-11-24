@@ -1,5 +1,7 @@
 # Grammarin
 
+DEMO VIDEO : https://youtu.be/yyBUNNnncMc
+
 Open-source Mandarin learning app for foreigners. Learn HSK-style sentence structures with clear English explanations, then practice with interactive drag-and-drop quizzes. Progress is saved per account.
 
 **Stack:** Next.js (App Router) · Supabase (Auth + Postgres + RLS) · shadcn/ui · Tailwind CSS
